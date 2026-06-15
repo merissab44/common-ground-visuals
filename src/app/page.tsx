@@ -14,54 +14,71 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <section className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-10 md:px-12 lg:px-16">
-        <header className="flex items-center justify-between border-b border-white/10 pb-8">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-[0.4em] text-red-500">
-              Common Ground Visuals
-            </p>
+      <section className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8 md:px-12 lg:px-16">
+        <header className="border-b border-white/10 pb-8">
+          <div className="flex items-start justify-between gap-8">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.4em] text-red-500">
+                Common Ground Visuals
+              </p>
 
-            <h1 className="mt-4 max-w-3xl text-5xl font-light tracking-tight md:text-7xl">
-              Quiet moments. Shared spaces. Real stories.
-            </h1>
+              <h1 className="mt-4 max-w-4xl text-5xl font-light leading-[0.95] tracking-tight md:text-7xl">
+                Quiet moments. Shared spaces. Real stories.
+              </h1>
+            </div>
+
+            <nav className="hidden gap-8 font-mono text-xs uppercase tracking-[0.25em] text-white/50 md:flex">
+              <Link href="/street">Street</Link>
+              <Link href="/portraits">Portraits</Link>
+              <Link href="/landscapes">Landscapes</Link>
+              <Link href="/about">About</Link>
+            </nav>
           </div>
 
-          <nav className="hidden gap-8 font-mono text-xs uppercase tracking-[0.25em] text-white/60 md:flex">
-            <Link href="/city-fragments">City Fragments</Link>
-            <Link href="/community">Community</Link>
-            <Link href="/landscapes">Landscapes</Link>
-            <Link href="/prints">Prints</Link>
-          </nav>
+          <p className="mt-6 max-w-2xl text-sm leading-6 text-white/50 md:text-base">
+            A visual archive of street scenes, portraits, landscapes, and
+            everyday moments across the Bay Area and beyond.
+          </p>
         </header>
 
-        <section className="grid flex-1 gap-4 py-10 md:grid-cols-3">
-          {featuredPhotos.map((photo) => (
+        <section className="grid flex-1 gap-4 py-10 md:grid-cols-6 md:auto-rows-[240px]">
+          {featuredPhotos.map((photo, index) => (
             <Link
               key={photo.id}
               href={`/${photo.collection}`}
-              className="group relative min-h-[420px] overflow-hidden border border-white/10 bg-white/5 transition-all duration-300 hover:border-white/20"
+              className={`group relative overflow-hidden border border-white/10 bg-white/5 outline-none transition-all duration-300 hover:border-white/30 focus-visible:border-red-500 ${
+                index === 0
+                  ? "md:col-span-3 md:row-span-2"
+                  : "md:col-span-3"
+              }`}
             >
               <Image
                 src={photo.image}
                 alt={photo.title}
                 fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                priority
-                className="object-cover opacity-80 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+                sizes={
+                  index === 0
+                    ? "(max-width: 768px) 100vw, 50vw"
+                    : "(max-width: 768px) 100vw, 50vw"
+                }
+                priority={index === 0}
+                className="object-cover opacity-80 transition duration-700 group-hover:scale-105 group-hover:opacity-100"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+
+              <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:bg-black/10 group-hover:opacity-100" />
 
               <div className="absolute bottom-0 left-0 p-6">
                 <p className="font-mono text-xs uppercase tracking-[0.3em] text-red-500">
                   Collection
                 </p>
 
-                <h2 className="mt-2 text-2xl font-light transition-colors duration-300 group-hover:text-white">
+                <h2 className="mt-2 text-2xl font-light">
                   {formatCollectionName(photo.collection)}
                 </h2>
 
-                <p className="mt-2 text-xs text-white/40">
+                <p className="mt-2 text-xs text-white/45">
                   {photo.location} · {photo.year}
                 </p>
               </div>
@@ -69,7 +86,7 @@ export default function Home() {
           ))}
         </section>
 
-        <footer className="flex items-center justify-between border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.25em] text-white/40">
+        <footer className="flex flex-col gap-2 border-t border-white/10 pt-6 font-mono text-xs uppercase tracking-[0.25em] text-white/40 md:flex-row md:items-center md:justify-between">
           <p>Photography by Merissa Bridgeman</p>
           <p>Oakland, CA</p>
         </footer>

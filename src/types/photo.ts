@@ -1,6 +1,6 @@
 export type Collection =
-  | "city-fragments"
-  | "community"
+  | "street"
+  | "portrait"
   | "landscapes";
 
 export interface Photo {
