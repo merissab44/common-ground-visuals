@@ -19,7 +19,13 @@ export interface CollectionImage {
 
 export interface Collection {
   slug: CollectionRoute;
+  /** Display number, assigned in order from the visible collections. */
   number: string;
+  /**
+   * Hides the collection everywhere: its page returns 404 and its photos are
+   * left out of every listing. Photo data stays in place for when it returns.
+   */
+  hidden?: boolean;
   title: string;
   description: string;
   layout: GalleryLayout;

@@ -1,4 +1,5 @@
-import { getCollection, resolveImage } from "@/lib/collections";
+import { notFound } from "next/navigation";
+import { findCollection, resolveImage } from "@/lib/collections";
 import { getPhotosByCollection } from "@/lib/photos";
 import type { CollectionRoute } from "@/types/collection";
 import PhotoGallery from "@/components/gallery/PhotoGallery";
@@ -6,7 +7,8 @@ import CollectionHeader from "./CollectionHeader";
 
 /** Shared page for every collection route: cinematic header, then the gallery. */
 export default function CollectionPage({ slug }: { slug: CollectionRoute }) {
-  const collection = getCollection(slug);
+  const collection = findCollection(slug);
+  if (!collection) notFound();
   const photos = getPhotosByCollection(slug);
   const hero = resolveImage(collection.hero);
 

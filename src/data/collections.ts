@@ -28,6 +28,7 @@ export const collections: Collection[] = [
   {
     slug: "portraits",
     number: "03",
+    hidden: true, // paused until permission to publish is confirmed
     title: "Portraits",
     description: "People, presence, and the stories they carry.",
     layout: "intimate",

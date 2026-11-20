@@ -1,6 +1,16 @@
-import { photos } from "@/data/photos";
+import { collections } from "@/data/collections";
+import { photos as allPhotos } from "@/data/photos";
 import type { CollectionRoute } from "@/types/collection";
 import type { Photo } from "@/types/photo";
+
+const hiddenCollections = new Set<string>(
+  collections.filter((item) => item.hidden).map((item) => item.slug),
+);
+
+/** Every photograph that may be shown: photos in hidden collections are excluded. */
+const photos: Photo[] = allPhotos.filter(
+  (photo) => !hiddenCollections.has(photo.collection),
+);
 
 export function getPhotos(): Photo[] {
   return photos;
