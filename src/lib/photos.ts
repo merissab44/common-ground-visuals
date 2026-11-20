@@ -1,11 +1,27 @@
 import { photos } from "@/data/photos";
+import type { CollectionRoute } from "@/types/collection";
+import type { Photo } from "@/types/photo";
 
-export function getFeaturedPhotos() {
+export function getPhotos(): Photo[] {
+  return photos;
+}
+
+export function getFeaturedPhotos(): Photo[] {
   return photos.filter((photo) => photo.featured);
 }
 
-export function getPhotosByCollection(collection: string) {
-  return photos.filter(
-    (photo) => photo.collection === collection
-  );
+export function getPhotoBySlug(slug: string): Photo {
+  const photo = photos.find((item) => item.slug === slug);
+  if (!photo) {
+    throw new Error(`Unknown photo slug: ${slug}`);
+  }
+  return photo;
+}
+
+/** Photographs for a collection page. Prints is driven by availableAsPrint metadata. */
+export function getPhotosByCollection(collection: CollectionRoute): Photo[] {
+  if (collection === "prints") {
+    return photos.filter((photo) => photo.availableAsPrint);
+  }
+  return photos.filter((photo) => photo.collection === collection);
 }
