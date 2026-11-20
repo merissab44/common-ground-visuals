@@ -1,5 +1,6 @@
 import { collections } from "@/data/collections";
 import { photos as allPhotos } from "@/data/photos";
+import { assetPath } from "@/lib/paths";
 import type { CollectionRoute } from "@/types/collection";
 import type { Photo } from "@/types/photo";
 
@@ -8,9 +9,9 @@ const hiddenCollections = new Set<string>(
 );
 
 /** Every photograph that may be shown: photos in hidden collections are excluded. */
-const photos: Photo[] = allPhotos.filter(
-  (photo) => !hiddenCollections.has(photo.collection),
-);
+const photos: Photo[] = allPhotos
+  .filter((photo) => !hiddenCollections.has(photo.collection))
+  .map((photo) => ({ ...photo, image: assetPath(photo.image) }));
 
 export function getPhotos(): Photo[] {
   return photos;

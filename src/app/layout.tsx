@@ -8,6 +8,7 @@ import {
 import Footer from "@/components/layout/Footer";
 import Navigation from "@/components/layout/Navigation";
 import { site } from "@/data/site";
+import { assetPath } from "@/lib/paths";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -39,7 +40,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_ORIGIN ?? site.url),
   title: {
     default: `${site.name} | Cinematic Photography`,
     template: `%s | ${site.name}`,
@@ -48,12 +49,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: site.name,
     description: site.description,
-    url: "/",
+    url: assetPath("/"),
     siteName: site.name,
     type: "website",
     images: [
       {
-        url: "/images/landscapes/japanese-film-final.jpg",
+        url: assetPath("/images/landscapes/japanese-film-final.jpg"),
         width: 2800,
         height: 2100,
         alt: "A red and gold temple across a still pond under heavy cloud.",
