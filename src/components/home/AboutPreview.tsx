@@ -6,7 +6,7 @@ import ArrowLink from "@/components/ui/ArrowLink";
 /** Homepage About section: a film-strip frame, a short note, and a taped print. */
 export default function AboutPreview() {
   const frame = getPhotoBySlug("parade-bus");
-  const print = getPhotoBySlug("canyon-river");
+  const print = getPhotoBySlug("rainier-waterfall");
 
   return (
     <section

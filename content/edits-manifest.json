@@ -43,13 +43,6 @@
    "longEdge": 2200,
    "modified": 1787705566804
   },
-  "river.jpg": {
-   "status": "published",
-   "slug": "canyon-river",
-   "collection": "landscapes",
-   "longEdge": 2200,
-   "modified": 1790905220963
-  },
   "rainier_waterfall.png": {
    "status": "published",
    "slug": "rainier-waterfall",
@@ -175,7 +168,7 @@
   },
   "rainier_waterfall01.png": {
    "status": "excluded",
-   "reason": "near-duplicate of a published photo",
+   "reason": "near-duplicate of rainier_waterfall (same shot, different grade)",
    "modified": 1792117187426
   },
   "birthday_wish1.png": {
@@ -202,6 +195,13 @@
    "status": "excluded",
    "reason": "personal photo of people; not published unless she asks",
    "modified": 1795133546294
+  },
+  "disneyland.png": {
+   "status": "published",
+   "slug": "red-bridge",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1795131098818
   }
  }
 }

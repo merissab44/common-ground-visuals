@@ -106,6 +106,17 @@ export const photos: Photo[] = [
     featured: true,
     alt: "A cook in a red cap, mask and blue gloves works behind a counter.",
   },
+  {
+    id: "red-bridge",
+    title: "Red Bridge",
+    slug: "red-bridge",
+    collection: "city-fragments",
+    image: "/images/city-fragments/red-bridge.jpg",
+    width: 2200,
+    height: 1650,
+    location: "Disneyland Resort, CA",
+    alt: "A red lacquered bridge between two tall pagoda-style towers, over dark water under a heavy, cloudy sky.",
+  },
 
   // Landscapes
   {
@@ -197,16 +208,6 @@ export const photos: Photo[] = [
     width: 1760,
     height: 2200,
     alt: "A small boat with two people on flat grey water, in black and white.",
-  },
-  {
-    id: "canyon-river",
-    title: "Canyon River",
-    slug: "canyon-river",
-    collection: "landscapes",
-    image: "/images/landscapes/canyon-river.jpg",
-    width: 1650,
-    height: 2200,
-    alt: "A narrow river running through a steep forested canyon in autumn.",
   },
   {
     id: "rainier-waterfall",
