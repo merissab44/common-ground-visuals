@@ -93,6 +93,20 @@ export const photos: Photo[] = [
     alt: "A woman in sunglasses seen over the heads of a parade crowd.",
   },
 
+  {
+    id: "cook-red-hat",
+    title: "Cook",
+    slug: "cook-red-hat",
+    collection: "city-fragments",
+    image: "/images/community/cook-red-hat.jpg",
+    width: 4284,
+    height: 5712,
+    location: "San Francisco, CA",
+    year: 2026,
+    featured: true,
+    alt: "A cook in a red cap, mask and blue gloves works behind a counter.",
+  },
+
   // Landscapes
   {
     id: "japanese-film-final",
@@ -217,19 +231,6 @@ export const photos: Photo[] = [
     height: 2200,
     location: "Denali, Alaska",
     alt: "A hooded hiker stands on a braided riverbed under heavy cloud.",
-  },
-  {
-    id: "cook-red-hat",
-    title: "Cook",
-    slug: "cook-red-hat",
-    collection: "portraits",
-    image: "/images/community/cook-red-hat.jpg",
-    width: 4284,
-    height: 5712,
-    location: "San Francisco, CA",
-    year: 2026,
-    featured: true,
-    alt: "A cook in a red cap, mask and blue gloves works behind a counter.",
   },
   {
     id: "forest-portrait",
