@@ -1,0 +1,212 @@
+{
+ "_about": "Tracks every file in the EDITS folder and what the nightly sync did with it. Statuses: published (on the site), hidden (kept but not shown), excluded (never publish). Files not listed here are NEW.",
+ "sources": {
+  "japanese_film_final.jpg": {
+   "status": "published",
+   "slug": "japanese-film-final",
+   "collection": "landscapes",
+   "longEdge": 2800,
+   "modified": 1791329776643
+  },
+  "cinematic_wave-2.jpg": {
+   "status": "published",
+   "slug": "cinematic-wave",
+   "collection": "landscapes",
+   "longEdge": 1620,
+   "modified": 1790975478287
+  },
+  "light_modern_rainier.jpg": {
+   "status": "published",
+   "slug": "rainier-reflection",
+   "collection": "landscapes",
+   "longEdge": 2200,
+   "modified": 1790900268761
+  },
+  "rainier_aqua.png": {
+   "status": "published",
+   "slug": "rainier-teal",
+   "collection": "landscapes",
+   "longEdge": 2056,
+   "modified": 1792533917042
+  },
+  "rainier_bw.png": {
+   "status": "published",
+   "slug": "rainier-monochrome",
+   "collection": "landscapes",
+   "longEdge": 2056,
+   "modified": 1792534097902
+  },
+  "Rainier_mountain-4.jpg": {
+   "status": "published",
+   "slug": "sailboat",
+   "collection": "landscapes",
+   "longEdge": 2200,
+   "modified": 1787705566804
+  },
+  "river.jpg": {
+   "status": "published",
+   "slug": "canyon-river",
+   "collection": "landscapes",
+   "longEdge": 2200,
+   "modified": 1790905220963
+  },
+  "rainier_waterfall.png": {
+   "status": "published",
+   "slug": "rainier-waterfall",
+   "collection": "landscapes",
+   "longEdge": 2400,
+   "modified": 1792119970682
+  },
+  "boat_blackandwhite.png": {
+   "status": "published",
+   "slug": "small-boat",
+   "collection": "landscapes",
+   "longEdge": 2200,
+   "modified": 1793138718799
+  },
+  "Niagara _falls _wildlife.JPG": {
+   "status": "published",
+   "slug": "squirrel-in-snow",
+   "collection": "field-notes",
+   "longEdge": 2200,
+   "modified": 1791950467000
+  },
+  "june_pizza.jpg": {
+   "status": "published",
+   "slug": "junes-pizza",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1790900153364
+  },
+  "Nyc_bookstand.JPG": {
+   "status": "published",
+   "slug": "bookstand",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1791950719000
+  },
+  "parade_banner.png": {
+   "status": "published",
+   "slug": "congrats-banner",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1793849665422
+  },
+  "parade_float.png": {
+   "status": "published",
+   "slug": "over-the-crowd",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1793858721937
+  },
+  "embrace_valks.png": {
+   "status": "published",
+   "slug": "parade-upper-deck",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1793853826878
+  },
+  "kiah_stokes.png": {
+   "status": "published",
+   "slug": "parade-bus",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1793856044262
+  },
+  "washington_street.png": {
+   "status": "published",
+   "slug": "washington-street",
+   "collection": "city-fragments",
+   "longEdge": 2200,
+   "modified": 1795135344093
+  },
+  "denali_river.png": {
+   "status": "hidden",
+   "slug": "denali-river",
+   "collection": "portraits",
+   "longEdge": 2200,
+   "modified": 1792716225165,
+   "reason": "Portraits collection is hidden until permission to publish is confirmed"
+  },
+  "alaska_train_portrait.png": {
+   "status": "hidden",
+   "slug": "alaska-railroad",
+   "collection": "portraits",
+   "longEdge": 2800,
+   "modified": 1791866797914,
+   "reason": "Portraits collection is hidden until permission to publish is confirmed"
+  },
+  "monterey_film_final.png": {
+   "status": "hidden",
+   "slug": "monterey-coast",
+   "collection": "portraits",
+   "longEdge": 2200,
+   "modified": 1791948011406,
+   "reason": "Portraits collection is hidden until permission to publish is confirmed"
+  },
+  "rainier_forest01.png": {
+   "status": "hidden",
+   "slug": "forest-portrait",
+   "collection": "portraits",
+   "longEdge": 2400,
+   "modified": 1792017192444,
+   "reason": "Portraits collection is hidden until permission to publish is confirmed"
+  },
+  "niagara_falls01.png": {
+   "status": "hidden",
+   "slug": "niagara-winter",
+   "collection": "portraits",
+   "longEdge": 2400,
+   "modified": 1791948793165,
+   "reason": "Portraits collection is hidden until permission to publish is confirmed"
+  },
+  "niagara_falls02.png": {
+   "status": "hidden",
+   "slug": "niagara-night",
+   "collection": "portraits",
+   "longEdge": 2200,
+   "modified": 1791949386308,
+   "reason": "Portraits collection is hidden until permission to publish is confirmed"
+  },
+  "IMG_2676.jpg": {
+   "status": "excluded",
+   "reason": "near-duplicate of a published photo",
+   "modified": 1792729815000
+  },
+  "rainier_waterfall01.png": {
+   "status": "excluded",
+   "reason": "near-duplicate of a published photo",
+   "modified": 1792117187426
+  },
+  "birthday_wish1.png": {
+   "status": "excluded",
+   "reason": "personal photo of people; not published unless she asks",
+   "modified": 1795113556374
+  },
+  "birthday_wish2.png": {
+   "status": "excluded",
+   "reason": "personal photo of people; not published unless she asks",
+   "modified": 1795114447487
+  },
+  "disneyland.png": {
+   "status": "excluded",
+   "reason": "personal photo of people; not published unless she asks",
+   "modified": 1795131098818
+  },
+  "graduation_aunt.png": {
+   "status": "excluded",
+   "reason": "personal photo of people; not published unless she asks",
+   "modified": 1795134655816
+  },
+  "graduation_solo.png": {
+   "status": "excluded",
+   "reason": "personal photo of people; not published unless she asks",
+   "modified": 1795134378394
+  },
+  "graduation.png": {
+   "status": "excluded",
+   "reason": "personal photo of people; not published unless she asks",
+   "modified": 1795133546294
+  }
+ }
+}
